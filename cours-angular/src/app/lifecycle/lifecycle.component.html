@@ -1,0 +1,11 @@
+<button type="button" (click)="basculerAffichage()">Basculer</button>
+
+<p>La valeur de afficher est {{ afficher }}</p>
+
+<div *ngIf="afficher">DIV ... </div>
+
+<app-contact-form *ngIf="afficher"></app-contact-form>
+
+<app-contact-form *ngIf="afficher"></app-contact-form>
+
+<app-contact-form *ngIf="afficher"></app-contact-form>

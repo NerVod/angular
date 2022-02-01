@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test.component';
 import { HeaderComponent } from './header/header.component';
 import { SyntaxeComponent } from './syntaxe/syntaxe.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     HeaderComponent,
-    SyntaxeComponent
+    SyntaxeComponent,
+    LifecycleComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule
