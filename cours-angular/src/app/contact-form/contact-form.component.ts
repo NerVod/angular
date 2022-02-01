@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ContactFormComponent implements OnInit {
   intervalId?: number;
   compteur = 0;
+  utilisateur = {
+    nom:'Skywalker',
+    prenom:'Luke',
+  }
 
   constructor() { }
 
@@ -26,4 +30,16 @@ export class ContactFormComponent implements OnInit {
   plus() {
     this.compteur ++
   }
+
+
+  //  inutile avec [(ngModel)] :
+  // majPrenom(inputNom: HTMLInputElement): void {
+  //   console.log(inputNom.value)
+  //   this.utilisateur.prenom= inputNom.value
+  // }
+  
+
+  
+
+
 }

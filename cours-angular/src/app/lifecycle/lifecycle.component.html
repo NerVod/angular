@@ -4,8 +4,10 @@
 
 <div *ngIf="afficher">DIV ... </div>
 
-<app-contact-form *ngIf="afficher"></app-contact-form>
+<ng-container *ngFor="let comp of nbElements">
+    <app-contact-form *ngIf="afficher"></app-contact-form>
+</ng-container>
 
-<app-contact-form *ngIf="afficher"></app-contact-form>
+<!-- <app-contact-form *ngIf="afficher"></app-contact-form>
 
-<app-contact-form *ngIf="afficher"></app-contact-form>
+<app-contact-form *ngIf="afficher"></app-contact-form> -->

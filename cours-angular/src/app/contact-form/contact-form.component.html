@@ -3,4 +3,17 @@
     <h2>Contact form</h2>
 <p>Compteur : {{ compteur }}</p>
 <button type="button" (click)="plus()">Incrémenter</button>
+
+<p>Prénom :{{ utilisateur.prenom }}</p>
+<p>Nom : {{ utilisateur.nom }}</p>
+
+<form>
+    <!-- <input type="text" name="prenom" (input)="majPrenom(champPrenom)" [value]="utilisateur.prenom" #champPrenom> -->
+    <!-- Ou plus simplement avec [(ngModel)] -->
+    <input type="text" name="prenom" [(ngModel)]="utilisateur.prenom" required>
+    <input type="text" name="nom"  [(ngModel)]="utilisateur.nom">
+    <input type="submit" value="Envoyer">
+</form>
+
+
 </div>

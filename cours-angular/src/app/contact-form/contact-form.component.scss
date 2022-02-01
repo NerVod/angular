@@ -3,3 +3,10 @@ div {
     padding: 0.5rem;
     margin: 1rem
 }
+
+form.ng-valid {
+    background-color: greenyellow;
+}
+form.ng-invalid {
+    background-color: red;
+}

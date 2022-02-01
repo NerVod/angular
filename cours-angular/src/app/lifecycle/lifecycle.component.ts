@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LifecycleComponent implements OnInit {
   afficher = true;
 
+  nbElements = [1, 2, 3]
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { SyntaxeComponent } from './syntaxe/syntaxe.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ContactFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
