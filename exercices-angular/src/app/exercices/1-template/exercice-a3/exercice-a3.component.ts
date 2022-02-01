@@ -1,5 +1,3 @@
-import { NgForOf } from '@angular/common';
-import { calcPossibleSecurityContexts } from '@angular/compiler/src/template_parser/binding_parser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,9 +13,11 @@ export class ExerciceA3Component implements OnInit {
     return a / b 
   }
 
-  // concat(arrayOfString) {
-  //   for
-  // }
+  concat(array:string[]) {
+    console.log(array.join(' '))
+    array.join(' ')
+     return array
+  }
 
 
   constructor() { }
