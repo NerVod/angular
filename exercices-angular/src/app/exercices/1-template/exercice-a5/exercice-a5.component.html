@@ -1,0 +1,14 @@
+<ng-template #matin></ng-template>
+<ng-template #apresMidi></ng-template>
+<p *ngIf="heure<12">Nous sommes le Matin</p>
+<p *ngIf="heure>12">Nous sommes l'après-midi</p>
+
+
+
+<p>L'année 2022 est bissextile ? : {{ estbissextile(annee)  }} </p>
+
+<p *ngIf="estbissextile(annee); else pasbissextile"> L'année est bissextile ! Il y aura 366 jours cette année.</p>
+
+<ng-template #pasbissextile>
+<p>L'année n'est pas bissextile, il y a 365 jours !</p>
+</ng-template>

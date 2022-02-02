@@ -12,6 +12,7 @@ export class ExerciceA4Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('{{ SuperForm }}')
   }
 
 }

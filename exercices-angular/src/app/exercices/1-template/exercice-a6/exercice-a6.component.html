@@ -1,0 +1,5 @@
+<div *ngFor=" let eleve of classe.listeInscrits">
+    <p [attr.style]="'color:blue'">Élève numéro : {{ classe.listeInscrits.indexOf(eleve) +1}}</p>
+    <p>Prénom et nom de l'élève : {{ this.eleve.prenom}} {{ this.eleve.nom }}</p>
+    <p>Âge de l'élève : {{ this.eleve.age}} ans.</p>
+</div>
