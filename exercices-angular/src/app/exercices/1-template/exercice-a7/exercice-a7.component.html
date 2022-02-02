@@ -1,1 +1,8 @@
-<p>exercice-a7 works!</p>
+<div *ngFor="let uneVoiture of voiture">
+    <p [attr.style]="'color: indigo'">modèle : {{ this.uneVoiture.modele | titlecase }} </p>
+    <p>puissance : {{ this.uneVoiture.puissance | uppercase }} </p>
+    <p>prix : {{ this.uneVoiture.prix | currency: '€' }} </p>
+    <p>Date de fabrication : {{ this.uneVoiture.dateFabrication | date : 'dd/MM/yyyy' }} </p>
+</div>
+
+
