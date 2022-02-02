@@ -1,0 +1,25 @@
+<p>Quelle est la rubrique active ?</p>
+
+<section>
+  <h2 (mouseover)="toggle('section1')">Section 1</h2>
+  <div *ngIf="this.isVisible.un">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien nulla, laoreet consectetur urna et, elementum suscipit magna. Aliquam erat volutpat. Quisque felis purus, tempus at accumsan quis, molestie in elit.</p>
+    <p>Aliquam erat volutpat. Quisque felis purus, tempus at accumsan quis, molestie in elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien nulla, laoreet consectetur urna et, elementum suscipit magna.</p>
+  </div>
+</section>
+
+<section>
+  <h2 (mouseover)="toggle('section2')">Section 2</h2>
+  <div *ngIf="isVisible.deux">
+    <p>Aliquam erat volutpat. Quisque felis purus, tempus at accumsan quis, molestie in elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien nulla, laoreet consectetur urna et, elementum suscipit magna.</p>
+    <p>Quisque sapien nulla, laoreet consectetur urna et, elementum suscipit magna. Aliquam erat volutpat. Quisque felis purus, tempus at accumsan quis, molestie in elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </div>
+</section>
+
+<section>
+  <h2 (mouseover)="toggle('section3')">Section 3</h2>
+  <div *ngIf="isVisible.trois">
+    <p>Sed ligula libero, tristique id vestibulum vel, imperdiet ac est. Nulla venenatis posuere neque eget venenatis. In elementum ipsum sit amet consequat fringilla. Nulla congue est neque, nec dapibus tellus gravida ac. Donec ligula massa, molestie at placerat eu, hendrerit sed eros.</p>
+    <p>Nulla congue est neque, nec dapibus tellus gravida ac. Donec ligula massa, molestie at placerat eu, hendrerit sed eros. Sed ligula libero, tristique id vestibulum vel, imperdiet ac est. Nulla venenatis posuere neque eget venenatis.</p>
+  </div>
+</section>
