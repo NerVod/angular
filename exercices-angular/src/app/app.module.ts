@@ -10,6 +10,7 @@ import { ExerciceA5Component } from './exercices/1-template/exercice-a5/exercice
 import { ExerciceA6Component } from './exercices/1-template/exercice-a6/exercice-a6.component';
 import { ExerciceA7Component } from './exercices/1-template/exercice-a7/exercice-a7.component';
 import { ExerciceB1Component } from './exercices/2-proprietes-evenements/exercice-b1/exercice-b1.component';
+import { ExerciceB2Component } from './exercices/2-proprietes-evenements/exercice-b2/exercice-b2.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ExerciceB1Component } from './exercices/2-proprietes-evenements/exercic
     ExerciceA5Component,
     ExerciceA6Component,
     ExerciceA7Component,
-    ExerciceB1Component
+    ExerciceB1Component,
+    ExerciceB2Component
   ],
   imports: [
     BrowserModule

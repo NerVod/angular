@@ -1,0 +1,5 @@
+<ng-container *ngFor="let animal of animaux" >
+    <h2>{{this.animal.description}}</h2>
+    <img [ngClass]="{'domestique': this.animal.domestique}" [src]="this.animal.url" width="200">
+    <p [ngClass]="{'bipede' : this.animal.pattes === 2, 'quadripede': this.animal.pattes === 4, 'multipede': this.animal.pattes > 4}">nombre de pattes : {{ this.animal.pattes }}</p>
+</ng-container>
