@@ -1,0 +1,10 @@
+<img [src]="chien" alt="chien Bling-bling" width="150">
+<p>Avec 3 baslises images distinctes</p>
+<img [src]="chats[0][0].URLImage" [alt]="chats[0][0].description" width="200">
+<img [src]="chats[1][0].URLImage" [alt]="chats[1][0].description" width="200">
+<img [src]="chats[2][0].URLImage" [alt]="chats[2][0].description" width="300">
+
+<p>Avec la méthode ngFor</p>
+<ng-container *ngFor="let chat of chats">
+    <img [src]="this.chat[0].URLImage" [alt]="chats[0][0].description" width="200">
+</ng-container>
