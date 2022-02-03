@@ -1,0 +1,8 @@
+<h2>Catalogue</h2>
+
+<div class="catalogue"> 
+    <div *ngFor="let product of produits">
+        <h3>{{ product.nom }}</h3>
+        <img [src]="product.image" width="150">
+    </div>
+</div>

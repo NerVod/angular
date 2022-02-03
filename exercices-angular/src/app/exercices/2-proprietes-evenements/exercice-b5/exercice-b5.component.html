@@ -1,0 +1,3 @@
+<input type="text" name="ecouteur" (keyup)="toucheFrappee($event.code)">
+<p>la touche frappée est : {{ this.code }}</p>
+<div (mousemove)="suivre($event.pageX, $event.pageY)"></div>

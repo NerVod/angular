@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
+              interface monTest {
+                a: string,
+                b: number,
+                [key: string]: any
+}
+
 
 @Component({
   selector: 'app-contact-form',
@@ -11,9 +19,18 @@ export class ContactFormComponent implements OnInit {
   utilisateur = {
     nom:'Skywalker',
     prenom:'Luke',
+    email:'maytheforce@jedi.holonet'
   }
 
-  constructor() { }
+  constructor() { 
+            const varTest: monTest ={
+              a: 'test',
+              b: 42,
+              nimporte: '',
+              quoi:'',
+            }
+
+  }
 
   ngOnInit(): void {
     console.log('OnInit ...');
@@ -29,7 +46,7 @@ export class ContactFormComponent implements OnInit {
 
   plus() {
     this.compteur ++
-  }
+  };
 
 
   //  inutile avec [(ngModel)] :
@@ -38,6 +55,13 @@ export class ContactFormComponent implements OnInit {
   //   this.utilisateur.prenom= inputNom.value
   // }
   
+  SoumettreFormulaire(monForm: NgForm): void {
+    console.log('Tentative d\'envoi du formulaire');
+
+    if(monForm.valid) {
+      console.log('Envoi des données au serveur ...')
+    }
+  };
 
   
 

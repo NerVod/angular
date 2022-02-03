@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent  {
 
-  constructor() { }
+  constructor(private monServiceTitle: Title) {
+    const titreActuel = this.monServiceTitle.getTitle()
+    console.log(titreActuel)
+    
+   }
+
+   nouveauTitre(nouveauTitre: string) {
+    this.monServiceTitle.setTitle(nouveauTitre)
+    
+   }
 
   
 

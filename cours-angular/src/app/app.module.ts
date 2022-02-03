@@ -8,6 +8,8 @@ import { SyntaxeComponent } from './syntaxe/syntaxe.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     SyntaxeComponent,
     LifecycleComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    CatalogueComponent,
+    AjoutProduitComponent
   ],
   imports: [
     BrowserModule,

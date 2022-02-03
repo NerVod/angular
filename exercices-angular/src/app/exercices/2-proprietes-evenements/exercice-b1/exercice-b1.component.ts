@@ -15,8 +15,8 @@ export class ExerciceB1Component implements OnInit {
       description: "photo façon chat criminel"
     }],
     [{
-      URLImage:'https://play-lh.googleusercontent.com/tgyMxIK6kEwJQUhJi_tcHuPI7m7sQLr8EGEmgGfh5lPgqNa238Kpt2i4H2xyXHxOKUU',
-      description: "chat Kaïra en sweat à capuche "
+      URLImage:'https://c.wallhere.com/photos/03/67/1920x1080_px_astronaut_cat_forest_gangster_lake_Ps_Thug_life-1519561.jpg!d',
+      description: "chat Ganster armé "
     }],
     [{
       URLImage:'https://img2.freepng.fr/20180326/suw/kisspng-cat-coub-youtube-video-bitly-thug-life-5ab9c0bb6fb079.9311188715221229394575.jpg',
