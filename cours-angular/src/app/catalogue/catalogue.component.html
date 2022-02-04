@@ -1,8 +1,10 @@
 <h2>Catalogue</h2>
 
+<app-ajout-produit></app-ajout-produit>
+
 <div class="catalogue"> 
-    <div *ngFor="let product of produits">
-        <h3>{{ product.nom }}</h3>
+    <div *ngFor="let product of produits, let i = index;" routerLink="/product/{{i}}">
+        <h3>{{ product.nom }} (indice : {{ i }})</h3>
         <img [src]="product.image" width="150">
     </div>
 </div>

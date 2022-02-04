@@ -23,6 +23,10 @@ export class CatalogueService {
         {
             nom: 'banane',
             image: "https://www.mascotte-france.fr/wp-content/uploads/2018/01/mascotte-banane.jpg"
+        },
+        {
+            nom: 'diable',
+            image: "https://www.mascotte-france.fr/wp-content/uploads/2018/01/mascotte-diable-2-510x510.jpg"
         }
     ];
 

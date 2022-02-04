@@ -13,7 +13,12 @@ export class CatalogueComponent implements OnInit {
 
   ngOnInit(): void {
     this.produits =this.catalogueService.produits;
-    console.log(this.produits)
+    console.log(this.produits);
+    console.log('CatalogueComponent onInit')
   }
 
+  ngOnDestroy(): void {
+console.log('CatalogueComponent onDestroy')
+
+  }
 }

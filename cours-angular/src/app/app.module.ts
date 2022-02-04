@@ -10,6 +10,37 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
+import { Route, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProduitComponent } from './produit/produit.component';
+
+const routes: Route[] = [
+  {
+    path:  '',
+    component: CatalogueComponent,
+  },
+  {
+    path: 'syntaxe',
+    component: SyntaxeComponent,
+  },
+  {
+    path: 'lifecycle',
+    component: LifecycleComponent,
+  },
+  {
+    path: 'Contact',
+    component: ContactFormComponent
+  },
+  {
+    path: 'product/:id',
+    component: ProduitComponent 
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  }
+  
+];
 
 @NgModule({
   declarations: [
@@ -20,11 +51,14 @@ import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
     LifecycleComponent,
     ContactFormComponent,
     CatalogueComponent,
-    AjoutProduitComponent
+    AjoutProduitComponent,
+    PageNotFoundComponent,
+    ProduitComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,8 +22,8 @@ export class ExerciceB5Component implements OnInit {
     return this.code
   }
 
-  suivre(Event.pageX: number,y) {
-    console.log(Event.)
-  }
+  // suivre(Event.pageX: number,y) {
+  //   console.log(Event.)
+  // }
  
 }

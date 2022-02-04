@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { NumbersService } from '../numbers.service';
 
 @Component({
   selector: 'app-header',
@@ -8,16 +9,19 @@ import { Title } from '@angular/platform-browser';
 })
 export class HeaderComponent  {
 
-  constructor(private monServiceTitle: Title) {
-    const titreActuel = this.monServiceTitle.getTitle()
-    console.log(titreActuel)
-    
-   }
+  random = this.numbersService.randomNumber; 
 
-   nouveauTitre(nouveauTitre: string) {
-    this.monServiceTitle.setTitle(nouveauTitre)
-    
-   }
+  constructor(
+    private monServiceTitle: Title, 
+    private numbersService: NumbersService,
+  ) {
+  const titreActuel = this.monServiceTitle.getTitle()
+    console.log(titreActuel)    
+  }
+
+  nouveauTitre(nouveauTitre: string) {
+    this.monServiceTitle.setTitle(nouveauTitre)    
+  }
 
   
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumbersService } from '../numbers.service';
 
 @Component({
   selector: 'app-syntaxe',
@@ -48,7 +49,10 @@ export class SyntaxeComponent implements OnInit {
 
   ]
 
-  constructor() { 
+  nombre = this.cequonveut.randomNumber
+  constructor(
+    private cequonveut: NumbersService
+    ) { 
 
     window.setInterval(() => {
       this.affichePara1 = Math.random() > 0.5;
@@ -63,6 +67,12 @@ export class SyntaxeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+console.log('SyntaxeComponent onInit')
+
+  }
+  ngOnDestroy(): void {
+console.log('SyntaxeComponent onDestroy')
+
   }
 
   desactiverChamps() {
