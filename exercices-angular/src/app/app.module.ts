@@ -14,6 +14,8 @@ import { ExerciceB2Component } from './exercices/2-proprietes-evenements/exercic
 import { ExerciceB3Component } from './exercices/2-proprietes-evenements/exercice-b3/exercice-b3.component';
 import { ExerciceB4Component } from './exercices/2-proprietes-evenements/exercice-b4/exercice-b4.component';
 import { ExerciceB5Component } from './exercices/2-proprietes-evenements/exercice-b5/exercice-b5.component';
+import { ExerciceB6Component } from './exercices/1-expressions/exercice-b6/exercice-b6.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,10 +31,12 @@ import { ExerciceB5Component } from './exercices/2-proprietes-evenements/exercic
     ExerciceB2Component,
     ExerciceB3Component,
     ExerciceB4Component,
-    ExerciceB5Component
+    ExerciceB5Component,
+    ExerciceB6Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

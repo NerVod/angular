@@ -1,3 +1,5 @@
+<p>Saisir une touche pour voir son code clavier</p>
 <input type="text" name="ecouteur" (keyup)="toucheFrappee($event.code)">
 <p>la touche frappée est : {{ this.code }}</p>
-<!-- <div (mousemove)="suivre($event.pageX, $event.pageY)"></div> -->
+<!-- <div (mousemove)="suivre($event)">La valeur de x est  : {{ x }} et la valeur de y est : {{ y }}</div> -->
+<div (mousemove)="suivre($event.pageX, $event.pageY)">La valeur de x est  : {{ x }} et la valeur de y est : {{ y }}</div>

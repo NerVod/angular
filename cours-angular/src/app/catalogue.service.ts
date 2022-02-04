@@ -13,19 +13,19 @@ export interface Produit {
 export class CatalogueService {
     produits: Produit[] = [
         {
-            nom: 'orque',
+            nom: 'Orque',
             image: "https://www.mascotte-france.fr/wp-content/uploads/2017/12/mascotte-orque-510x510.jpg",
         },
         {
-            nom: 'gorille',
+            nom: 'Gorille',
             image: "https://www.mascotte-france.fr/wp-content/uploads/2017/12/mascotte-gorille-qui-porte-510x510.jpg",
         },
         {
-            nom: 'banane',
+            nom: 'Banane',
             image: "https://www.mascotte-france.fr/wp-content/uploads/2018/01/mascotte-banane.jpg"
         },
         {
-            nom: 'diable',
+            nom: 'Diable',
             image: "https://www.mascotte-france.fr/wp-content/uploads/2018/01/mascotte-diable-2-510x510.jpg"
         }
     ];

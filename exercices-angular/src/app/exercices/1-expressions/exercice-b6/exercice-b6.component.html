@@ -1,0 +1,6 @@
+<h2>Bonjour {{ prenom }}</h2>
+<input type="text" [(ngModel)]="prenom">
+
+<input type="checkbox" [(ngModel)]="abonne">
+
+<p *ngIf="abonne">Vous êtes abonné</p>
